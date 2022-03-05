@@ -12,7 +12,11 @@ app.get('/testagain', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Contrats! Node app is working...')
+  res.send('Welcome to the updated home page...')
+})
+
+app.get('/newroute', (req, res) => {
+  res.send('This is the new route which is added')
 })
 
 app.listen(port, () => {
